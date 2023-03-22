@@ -1,0 +1,25 @@
+:root {
+  --c01: #ffffff;
+  --c10: #111111;
+}
+
+.container-bg.color1 {
+  background: linear-gradient(
+      180deg,
+      #111111 0%,
+      #130323 25%,
+      #140226 50%,
+      #0e0318 75%,
+      #111111 100%
+    )
+    no-repeat;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-bg.color2 {
+  background: var(--c10) no-repeat;
+}

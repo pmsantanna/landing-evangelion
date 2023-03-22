@@ -1,0 +1,141 @@
+.banner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 80px;
+  padding-top: 310px;
+  background: linear-gradient(180deg, #672bb5 0%, rgba(103, 43, 181, 0) 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 1600px;
+  height: 2300px;
+}
+
+.img-detalhe {
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.img-bg {
+  position: absolute;
+  display: inline-block;
+  background: url("../img/svg_bg_lineart.svg") no-repeat;
+  height: 1500px;
+  width: 650px;
+  right: 0px;
+  top: 0px;
+  z-index: 50;
+}
+
+.img-lineart {
+  top: 250px;
+  right: -555px;
+  right: 0;
+  position: absolute;
+  height: 1500px;
+  width: 945px;
+  background: url("../img/svg_lineart.svg") no-repeat;
+  mix-blend-mode: multiply;
+  z-index: 500;
+}
+
+.titulo1 {
+  position: relative;
+  height: 50px;
+  z-index: 50;
+}
+
+.titulo2 {
+  position: relative;
+  height: 70px;
+  z-index: 50;
+}
+
+.detalhe-titulo {
+  margin: 0;
+  display: block;
+  background: url("../img/svg_detail_titulo.svg") no-repeat;
+  height: 8px;
+  width: 150px;
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+
+.detalhe-bg {
+  position: absolute;
+  margin: 0;
+  display: block;
+  background: url("../img/svg_detail_grid.svg") no-repeat;
+  height: 1500px;
+  width: 1500px;
+  top: 50px;
+  left: -0px;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.buttons {
+  display: flex;
+  position: relative;
+  z-index: 50;
+  gap: 30px;
+}
+
+.button {
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: regular;
+  box-sizing: border-box;
+  display: flex;
+  padding: 12px 24px;
+  gap: 20px;
+  border-radius: 2px 2px 20px 2px;
+  justify-content: center;
+  width: 240px;
+}
+
+.button img {
+  height: 18px;
+}
+
+.button-fill {
+  background: var(--c10);
+  color: var(--c01);
+}
+
+.button-blank {
+  background: #672bb5;
+  border: 1px solid var(--c10);
+}
+
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.detalhe-card {
+  margin-top: 420px;
+  position: relative;
+  z-index: 50;
+}
+
+.card-head {
+  top: 950px;
+  position: absolute;
+  z-index: 100;
+}
+
+.detalhe-bl {
+  display: block;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: url("../img/svg_detail_balls_bottom_right.svg") no-repeat;
+  top: 1300px;
+  right: 15px;
+}

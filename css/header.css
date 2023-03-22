@@ -1,0 +1,78 @@
+body {
+  max-width: 100%;
+}
+
+.email-container {
+  display: inline-block;
+  position: relative;
+}
+
+.email-container .icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu ul {
+  display: flex;
+  gap: 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.header nav {
+  font-size: 1.125rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.header nav a {
+  color: var(--c01);
+}
+
+.canvas {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.canvas img {
+  z-index: 100;
+}
+
+.bg-text {
+  margin-top: 80px;
+  display: inline-block;
+  position: absolute;
+}
+
+.bg-text span {
+  display: block;
+  color: #200634;
+  font: 200px "Audiowide", sans-serif;
+  z-index: 0;
+}
+
+.bg-text span:nth-child(1) {
+  color: #200634;
+}
+
+.bg-text span:nth-child(2) {
+  margin-top: -100px;
+  font-size: 750px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(106, 29, 166, 0.2) 0%,
+    rgba(175, 29, 152, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
