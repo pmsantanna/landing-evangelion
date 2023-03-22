@@ -15,13 +15,150 @@
   border: 600px solid transparent;
   border-bottom: 0;
   border-right: 800px solid var(--c10);
-  /* border-left: 800px solid red; */
   position: absolute;
   right: -5px;
   bottom: 495px;
 }
 
+.container.pilotos {
+  position: relative;
+  display: flex;
+}
+
 .pilotos {
   position: relative;
   height: 500px;
+}
+
+.pilotos h2 {
+  color: var(--c01);
+}
+
+.pilotos .main {
+  position: absolute;
+  top: 0;
+}
+
+.pilotos-section {
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+  margin-top: -1250px;
+  z-index: 1500;
+}
+
+.pilotos-section h2 {
+  position: relative;
+  display: block;
+  color: var(--c01);
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  z-index: 500;
+}
+
+.pilotos-section h2::before {
+  position: absolute;
+  content: "";
+  background: url("../img/svg_detail_balls_top_right.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  top: -20px;
+  left: -20px;
+  z-index: -100;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/*.content {
+  display: inline-block;
+  position: absolute;
+  height: 510px;
+  width: 355px;*/
+/* background: linear-gradient(180deg, #2c0b45 0%, rgba(254, 252, 255, 0) 100%); */
+/* border: 2px solid; */ /*
+  background: url("../img/svg_card.svg") no-repeat;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+  border-radius: 5px;
+  transform: rotate(180deg);
+  opacity: 0.75;
+}
+*/
+
+.card-item {
+  background: url("../img/svg_card.svg");
+  position: relative;
+  display: grid;
+  height: 510px;
+  width: 360px;
+}
+
+.img-profile {
+  justify-self: center;
+  position: relative;
+  left: 15px;
+  margin: 0 auto;
+  height: 510px;
+  width: 360px;
+}
+
+.profile-01 {
+  background: url("../img/profiles/profile-1.png") no-repeat;
+}
+
+.profile-02 {
+  background: url("../img/profiles/profile-2.png") no-repeat;
+}
+
+.profile-03 {
+  background: url("../img/profiles/profile-3.png") no-repeat;
+}
+
+.card-item h3 {
+  color: var(--c01);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-top: -175px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-item h4 {
+  color: rgba(222, 222, 222, 1);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-top: -125px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-item::after {
+  background: url("../img/svg_card_detail.svg") no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  height: 150px;
+  width: 360px;
+  content: "";
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+.detalhe-g {
+  background: url("../img/svg_detail_balls_bottom_right_g.svg") no-repeat;
+  position: absolute;
+  z-index: -500;
+  bottom: -200px;
+  height: 200px;
+  width: 200px;
+  right: 0px;
 }
