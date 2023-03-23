@@ -152,12 +152,8 @@
 }
 
 .ficha .button-flex {
+  margin-top: 150px;
   display: flex;
-}
-
-.ficha .button {
-  position: relative;
-  max-width: 400px;
 }
 
 .galeria-controller {
