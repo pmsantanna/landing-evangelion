@@ -1,0 +1,198 @@
+#ficha {
+  display: grid;
+}
+
+.bg {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ficha-bg {
+  background-image: url("../img/svg_background.svg");
+  background-repeat: no-repeat;
+  background-position: -320px 287px;
+  background-size: auto;
+  object-fit: cover;
+  width: 1900px;
+  max-width: 100%;
+  justify-self: center;
+}
+
+#background {
+  top: -170px;
+  position: absolute;
+  max-width: 100%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.ficha {
+  display: flex;
+  position: relative;
+  z-index: 500;
+  color: var(--c01);
+  margin-top: 135px;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+
+.ficha h2 {
+  font-size: 48px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ficha h3 {
+  font-family: "Audiowide";
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.ficha h4 {
+  font-family: "Audiowide";
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: -52px;
+}
+
+.ficha p {
+  font-size: 20px;
+  font-family: "Rubik";
+  max-width: 80ch;
+  line-height: 1.35;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.ficha .bg {
+  position: absolute;
+}
+
+.conteudo {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 100vh;
+}
+
+.conteudo h2 {
+  display: flex;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.conteudo h2::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: url("../img/svg_detail_balls_top_right.svg") no-repeat;
+  height: 250px;
+  width: 250px;
+  top: 50px;
+  left: -50px;
+  z-index: -100;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+}
+
+.link {
+  position: relative;
+  align-self: flex-start;
+  padding: 10px 20px;
+  color: var(--c01);
+  text-transform: uppercase;
+  margin-left: -20px;
+  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  font-kerning: auto;
+}
+
+.link::after {
+  content: "";
+  background: var(--c01);
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 2px;
+  width: calc(100% - 40px);
+  justify-self: center;
+}
+
+.conteudo-galeria {
+  position: relative;
+  display: block;
+}
+
+.conteudo-galeria a {
+  position: relative;
+  bottom: 300px;
+  right: -420px;
+  max-width: 100%;
+  z-index: 500;
+}
+
+.conteudo-galeria a img {
+  position: relative;
+  width: 700px;
+  right: 80px;
+  bottom: -80px;
+  object-fit: cover;
+}
+
+.conteudo-galeria img {
+  position: relative;
+  margin-top: 95px;
+  padding-left: 100px;
+}
+
+.ficha .button-flex {
+  display: flex;
+}
+
+.ficha .button {
+  position: relative;
+  max-width: 400px;
+}
+
+.galeria-controller {
+  align-items: center;
+  display: inline-block;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  right: 200px;
+  top: 250px;
+}
+
+.diamond {
+  display: inline-block;
+  position: relative;
+  background: url("../img/gallery/checkbox-small.svg") no-repeat;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  z-index: 500;
+}
+
+.diamond.active {
+  background: url("../img/gallery/checkbox-empty.svg") no-repeat;
+  height: 35px;
+  width: 35px;
+}
+
+.diamond.active:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  background: url("../img/gallery/checkbox-inner.svg") no-repeat;
+  height: 35px;
+  width: 35px;
+}
