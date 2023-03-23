@@ -1,0 +1,77 @@
+.extras {
+  position: relative;
+}
+
+.container.extras h1 {
+  color: var(--c01);
+  font-size: 48px;
+  font-family: "Oswald";
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.extra-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 50px;
+  gap: 30px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 300px;
+}
+
+.extra-card-item {
+  display: flex;
+  flex-direction: column;
+  background: url("../img/cards/svg_card.svg") no-repeat;
+  width: 570px;
+  height: 410px;
+  padding: 120px 50px;
+  gap: 50px;
+}
+
+.extra-card-item h2 {
+  font-size: 44px;
+  font-family: "Rubik", sans-serif;
+}
+
+.card-1 h2 {
+  background: linear-gradient(180deg, #5bdb7c 0%, rgba(31, 204, 76, 0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-2 h2 {
+  background: linear-gradient(
+    180deg,
+    #8849da 0%,
+    rgba(176, 129, 235, 0.5) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.extra-card-item h3 {
+  font-size: 64px;
+  font-family: "Rubik";
+  color: aliceblue;
+}
+
+.extra-card .detalhe {
+  display: flex;
+  position: absolute;
+}
+
+.extras-detalhe {
+  position: absolute;
+  bottom: -150px;
+  right: 70px;
+  background: url("../img/svg_detail_balls_bottom_right_g.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  opacity: 0.3;
+  z-index: 0;
+}
