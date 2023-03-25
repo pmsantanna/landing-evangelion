@@ -1,6 +1,8 @@
 :root {
   --c01: #ffffff;
+  --c04: #cccccc;
   --c10: #111111;
+  --c99: #000000;
 }
 
 .container-bg.color1 {
@@ -22,4 +24,8 @@
 
 .container-bg.color2 {
   background: var(--c10) no-repeat;
+}
+
+.container-bg.color0 {
+  background: var(--c99) no-repeat;
 }

@@ -1,0 +1,134 @@
+.galeria-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.galeria-inputs label {
+  padding: 0;
+}
+
+.galeria-form {
+  display: block;
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  z-index: 500;
+}
+
+/* 
+ * Hide the inputs. 
+ */
+
+input {
+  display: none;
+}
+
+/*
+ * Then, style the label so it looks like however you want.
+ * Here's a quick rundown of how I did it here:
+ */
+
+/*
+ * Some basic positioning styles, and we give it the pointer cursor to show 
+ * that it's clickable
+ */
+
+label {
+  display: inline-block;
+  position: relative;
+  align-self: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+/*
+ * With how I decided to build this, the position: relative is super important.
+ * We're going to position a pseudo element within this element(As it is the containing box)
+ */
+
+label span {
+  position: relative;
+
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+/* 
+ * Because we're using pseudo elements, a content property is required to make them appear.
+ */
+
+label span:before,
+label span:after {
+  content: "";
+}
+
+/*
+ * We are using the :before peudo elemnt as the actual button,
+ * then we'll position the :after over it. You could also use a background-image,
+ * font-icon, or really anything if you want different styles.
+ * For the specific style we're going for, this approach is simply the easiest, but
+ * once you understand the concept you can really do it however you like.
+ */
+
+label span:before {
+  border: 1px solid transparent;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: top;
+  transform: rotate(45deg);
+  background: var(--c04);
+}
+
+label span:after {
+  background: #222021;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -1px;
+  left: 2px;
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+/*
+ * This is the most important part of this whole file, if you understand what's happening here
+ * you can really make this in so many different ways.
+ * 
+ * We start by selecting the input inside of the label, with "label input". From there we use the 
+ * ":checked" selector to *only* select the input when it is checked. We then use the immediate sibling 
+ * selector(+) to select the span, and then it's pseudo element :after(What we are using to mark the button)
+ * Because we already styled the :after, all we have to do is set the opacity to 1, making it fade in.
+ */
+label input:checked + span:after {
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: opacity 1200ms;
+  top: -2px;
+  left: 9px;
+  opacity: 1;
+}
+
+label input:checked + span:before {
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 200ms;
+  width: 26px;
+  height: 26px;
+  margin-top: -10px;
+}
+
+/* 
+ * A little styling for the demo 
+ */
+
+body {
+  background: #fbfbfb;
+  font-family: Arial;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+label li {
+  display: flex;
+  align-items: center;
+}

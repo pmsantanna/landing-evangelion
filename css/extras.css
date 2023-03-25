@@ -2,6 +2,11 @@
   position: relative;
 }
 
+#container-extra {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
 .container.extras h1 {
   color: var(--c01);
   font-size: 48px;
@@ -18,7 +23,6 @@
   gap: 30px;
   margin: 0 auto;
   justify-content: center;
-  margin-bottom: 300px;
 }
 
 .extra-card-item {
