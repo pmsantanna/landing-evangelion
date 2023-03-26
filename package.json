@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "description": "",
-  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/pmsantanna/landing-evangelion.git"
@@ -17,11 +16,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-gh-pages": "^0.5.4",
     "vite": "^4.2.0"
   },
   "dependencies": {
