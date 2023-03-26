@@ -1,9 +1,11 @@
 var gulp = require("gulp");
 var deploy = require("gulp-gh-pages");
 
-/**
- * Push build to gh-pages
- */
 gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(deploy());
+  return gulp.src("./dist/**/*").pipe(
+    deploy({
+      remoteUrl: "https://github.com/pmsantanna/landing-evangelion.git",
+      branch: "master",
+    })
+  );
 });

@@ -2,7 +2,18 @@
   "name": "landing-evangelion",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "description": "",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pmsantanna/landing-evangelion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmsantanna/landing-evangelion/issues"
+  },
+  "homepage": "https://github.com/pmsantanna/landing-evangelion",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
