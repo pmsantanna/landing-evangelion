@@ -11,7 +11,7 @@
   display: block;
   position: absolute;
   top: 250px;
-  right: 200px;
+  right: 50px;
   z-index: 500;
 }
 
@@ -49,7 +49,6 @@ label {
 
 label span {
   position: relative;
-
   margin-top: 20px;
   line-height: 22px;
 }
@@ -116,19 +115,19 @@ label input:checked + span:before {
   width: 26px;
   height: 26px;
   margin-top: -10px;
-}
-
-/* 
- * A little styling for the demo 
- */
-
-body {
-  background: #fbfbfb;
-  font-family: Arial;
-  color: rgba(0, 0, 0, 0.7);
+  background: var(--c01);
 }
 
 label li {
   display: flex;
   align-items: center;
+}
+
+.banner-eva:hover {
+  filter: brightness(1.5);
+  transition: all 300ms;
+}
+
+.banner-eva {
+  transition: all 300ms;
 }

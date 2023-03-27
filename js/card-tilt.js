@@ -1,8 +1,6 @@
 import VanillaTilt from "vanilla-tilt";
 
 export default function tiltcardInit() {
-  console.log(document.querySelector(".extra-card-item"));
-
   VanillaTilt.init(document.querySelectorAll(".extra-card-item"), {
     scale: 1,
     reverse: true,
