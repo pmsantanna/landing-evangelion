@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="canvas">
+      <div id="canvas" class="canvas">
         <div class="bg-text">
           <span>EVA UNIT</span>
           <span>01</span>
@@ -94,7 +94,7 @@
 
         <div class="cards">
 
-          <a href="">
+          <a href="#pilotos">
             <div class="card-item">
               <div class="img-profile profile-01"></div>
               <h3 class="nome-profile">Ayaname Rei</h3>
@@ -103,7 +103,7 @@
             </div>
           </a>
 
-          <a href="">
+          <a href="#pilotos">
             <div class="card-item">
               <div class="img-profile profile-02"></div>
               <h3 class="nome-profile">Shinji Ikari</h3>
@@ -112,7 +112,7 @@
             </div>
           </a>
 
-          <a href="">
+          <a href="#pilotos">
             <div class="card-item">
               <div class="img-profile profile-03"></div>
               <h3 class="nome-profile">Asuka Langley</h3>
@@ -133,11 +133,27 @@
       <div id="pilotos" class="container ficha">
         <div class="conteudo">
           <h2>Pilotos.</h2>
-          <h3>SHINJI IKARI</h3>
-          <h4>Eva Unit 01</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
-          <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
-          <a href="/" class="link">Conheça Mais Sobre</a>
+          <div class="conteudo-item">
+            <h3>AYANAMI REI</h3>
+            <h4>Eva Unit 00</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
+            <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
+          </div>
+
+          <div class="conteudo-item active">
+            <h3>SHINJI IKARI</h3>
+            <h4>Eva Unit 01</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
+            <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
+          </div>
+
+          <div class="conteudo-item ">
+            <h3>ASUKA LANGLEY</h3>
+            <h4>Eva Unit 01</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
+            <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
+          </div>
+          <a href="" class="link">Conheça Mais Sobre</a>
 
           <div class="button-flex">
             <a href="/">
@@ -168,23 +184,35 @@
           <div class="galeria-form">
             <ul class="galeria-inputs">
               <li><label>
-                  <input id="01" class="gallery-item" type="radio" name="radio">
+                  <input id="1" class="gallery-item" type="radio" name="radio">
                   <span></span>
                 </label></li>
               <li><label>
-                  <input id="02" class="gallery-item" type="radio" name="radio" checked>
+                  <input id="2" class="gallery-item" type="radio" name="radio" checked>
                   <span></span>
                 </label></li>
               <li><label>
-                  <input id="03" class="gallery-item" type="radio" name="radio">
+                  <input id="3" class="gallery-item" type="radio" name="radio">
                   <span></span>
                 </label></li>
             </ul>
           </div>
 
           <div class="conteudo-galeria">
-            <img id="galeria-img" src="./img/fichas/02.png" alt="">
-            <a href="/"><img class="banner-eva" src="./img/fichas/eva-01.png" alt=""></a>
+            <div class="content-gallery-form">
+              <img id="galeria-img" src="./img/fichas/01.png" alt="">
+              <a href="#canvas  "><img class="banner-eva" src="./img/fichas/eva-00.png" alt=""></a>
+            </div>
+
+            <div class="content-gallery-form active">
+              <img id="galeria-img" src="./img/fichas/02.png" alt="">
+              <a href="#canvas"><img class="banner-eva" src="./img/fichas/eva-01.png" alt=""></a>
+            </div>
+
+            <div class="content-gallery-form">
+              <img id="galeria-img" src="./img/fichas/03.png" alt="">
+              <a href="#canvas"><img class="banner-eva" src="./img/fichas/eva-02.png" alt=""></a>
+            </div>
           </div>
         </div>
 
