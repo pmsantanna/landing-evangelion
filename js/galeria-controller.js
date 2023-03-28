@@ -1,3 +1,5 @@
+import animation from "./galleryAnim.js";
+
 export default function () {}
 
 const galleryControllers = document.querySelectorAll(".gallery-item");
@@ -39,4 +41,5 @@ function changeImage(event) {
     }
   });
   galleryChildren[elementId - 1].classList.toggle("active");
+  animation();
 }

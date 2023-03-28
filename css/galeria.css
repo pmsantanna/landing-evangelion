@@ -154,7 +154,7 @@ label li {
   display: block;
   animation: showLeft 0.6s;
 }
-
+/* 
 @keyframes showRight {
   from {
     display: none;
@@ -164,7 +164,7 @@ label li {
     display: block;
     opacity: 1;
   }
-}
+} */
 
 @keyframes showLeft {
   from {
