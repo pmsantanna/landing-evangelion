@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oswald:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
   <title>Evangelion</title>
-  <script type="module" crossorigin src="/landing-evangelion/assets/index-0b6b2b88.js"></script>
-  <link rel="stylesheet" href="/landing-evangelion/assets/index-edd26684.css">
+  <script type="module" crossorigin src="/landing-evangelion/assets/index-880ef46a.js"></script>
+  <link rel="stylesheet" href="/landing-evangelion/assets/index-a9feac3a.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         </div>
       </div>
 
-      <div class="canvas">
+      <div id="canvas" class="canvas">
         <div class="bg-text">
           <span>EVA UNIT</span>
           <span>01</span>
@@ -96,7 +96,7 @@
 
         <div class="cards">
 
-          <a href="">
+          <a href="#pilotos">
             <div class="card-item">
               <div class="img-profile profile-01"></div>
               <h3 class="nome-profile">Ayaname Rei</h3>
@@ -105,7 +105,7 @@
             </div>
           </a>
 
-          <a href="">
+          <a href="#pilotos">
             <div class="card-item">
               <div class="img-profile profile-02"></div>
               <h3 class="nome-profile">Shinji Ikari</h3>
@@ -114,7 +114,7 @@
             </div>
           </a>
 
-          <a href="">
+          <a href="#pilotos">
             <div class="card-item">
               <div class="img-profile profile-03"></div>
               <h3 class="nome-profile">Asuka Langley</h3>
@@ -135,11 +135,27 @@
       <div id="pilotos" class="container ficha">
         <div class="conteudo">
           <h2>Pilotos.</h2>
-          <h3>SHINJI IKARI</h3>
-          <h4>Eva Unit 01</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
-          <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
-          <a href="/" class="link">Conheça Mais Sobre</a>
+          <div class="conteudo-item">
+            <h3>AYANAMI REI</h3>
+            <h4>Eva Unit 00</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
+            <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
+          </div>
+
+          <div class="conteudo-item active">
+            <h3>SHINJI IKARI</h3>
+            <h4>Eva Unit 01</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
+            <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
+          </div>
+
+          <div class="conteudo-item ">
+            <h3>ASUKA LANGLEY</h3>
+            <h4>Eva Unit 01</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dictum enim. In nec lectus vel nisl euismod maximus. Proin faucibus id elit sed mollis. </p>
+            <p>Vestibulum ultricies risus sed mi mattis, sed accumsan nisl tristique. Aliquam laoreet nunc quis lacus tincidunt ultrices. Aliquam purus neque, mollis id iaculis in. </p>
+          </div>
+          <a href="" class="link">Conheça Mais Sobre</a>
 
           <div class="button-flex">
             <a href="/">
@@ -170,23 +186,35 @@
           <div class="galeria-form">
             <ul class="galeria-inputs">
               <li><label>
-                  <input id="01" class="gallery-item" type="radio" name="radio">
+                  <input id="1" class="gallery-item" type="radio" name="radio">
                   <span></span>
                 </label></li>
               <li><label>
-                  <input id="02" class="gallery-item" type="radio" name="radio" checked>
+                  <input id="2" class="gallery-item" type="radio" name="radio" checked>
                   <span></span>
                 </label></li>
               <li><label>
-                  <input id="03" class="gallery-item" type="radio" name="radio">
+                  <input id="3" class="gallery-item" type="radio" name="radio">
                   <span></span>
                 </label></li>
             </ul>
           </div>
 
           <div class="conteudo-galeria">
-            <img id="galeria-img" src="/landing-evangelion/assets/02-428be091.png" alt="">
-            <a href="/"><img class="banner-eva" src="/landing-evangelion/assets/eva-01-7e77779e.png" alt=""></a>
+            <div class="content-gallery-form">
+              <img id="galeria-img" src="/landing-evangelion/assets/01-24a8e020.png" alt="">
+              <a href="#canvas  "><img class="banner-eva" src="/landing-evangelion/assets/eva-00-17f4e7c2.png" alt=""></a>
+            </div>
+
+            <div class="content-gallery-form active">
+              <img id="galeria-img" src="/landing-evangelion/assets/02-428be091.png" alt="">
+              <a href="#canvas"><img class="banner-eva" src="/landing-evangelion/assets/eva-01-7e77779e.png" alt=""></a>
+            </div>
+
+            <div class="content-gallery-form">
+              <img id="galeria-img" src="/landing-evangelion/assets/03-b5dc17d3.png" alt="">
+              <a href="#canvas"><img class="banner-eva" src="/landing-evangelion/assets/eva-02-e6be1d76.png" alt=""></a>
+            </div>
           </div>
         </div>
 
