@@ -74,6 +74,10 @@
 
 .copy {
   grid-column: 1/-1;
+
+  color: #dbdbdb;
+  font-family: "Rubik", Courier, monospace;
+  font-size: 0.875rem;
 }
 
 .home ul li {

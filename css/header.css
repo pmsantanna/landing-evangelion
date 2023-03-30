@@ -2,6 +2,11 @@ body {
   max-width: 100%;
 }
 
+canvas {
+  position: relative;
+  z-index: 5000;
+}
+
 .email-container {
   display: inline-block;
   position: relative;
@@ -13,6 +18,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#menu ul > li > a {
+  font-size: 1.25rem;
+  text-transform: initial;
+}
+
+#menu ul > li > a::after {
+  bottom: 5px;
 }
 
 .menu ul {

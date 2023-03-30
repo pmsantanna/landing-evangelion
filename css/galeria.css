@@ -19,7 +19,7 @@
  * Hide the inputs. 
  */
 
-input {
+.galeria-inputs input {
   display: none;
 }
 
